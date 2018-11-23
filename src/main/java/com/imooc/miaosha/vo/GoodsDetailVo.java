@@ -1,0 +1,46 @@
+package com.imooc.miaosha.vo;
+
+import com.imooc.miaosha.domain.MiaoshaUser;
+
+public class GoodsDetailVo {
+    //    商品
+    private GoodsVo goods;
+    //    秒杀状态
+    private int miaoshaStatus = 0;
+    //        剩余时间
+    private int remainSeconds = 0;
+    //秒杀用户
+    private MiaoshaUser user;
+
+    public MiaoshaUser getUser() {
+        return user;
+    }
+
+    public void setUser(MiaoshaUser user) {
+        this.user = user;
+    }
+
+    public GoodsVo getGoods() {
+        return goods;
+    }
+
+    public void setGoods(GoodsVo goods) {
+        this.goods = goods;
+    }
+
+    public int getMiaoshaStatus() {
+        return miaoshaStatus;
+    }
+
+    public void setMiaoshaStatus(int miaoshaStatus) {
+        this.miaoshaStatus = miaoshaStatus;
+    }
+
+    public int getRemainSeconds() {
+        return remainSeconds;
+    }
+
+    public void setRemainSeconds(int remainSeconds) {
+        this.remainSeconds = remainSeconds;
+    }
+}
